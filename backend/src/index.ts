@@ -1,9 +1,8 @@
 import { Hono } from 'hono'
+import healthRoute from './routers/health.router'
 
 const app = new Hono()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+app.route("/api", healthRoute)
 
 export default app
