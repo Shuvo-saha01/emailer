@@ -1,0 +1,85 @@
+# =========================================================================
+# VCS & CI/CD
+# =========================================================================
+.git
+.gitignore
+.gitattributes
+.github/
+.gitlab-ci.yml
+
+# =========================================================================
+# Heavy Local Dependencies & Build Context
+# =========================================================================
+**/node_modules/
+**/bower_components/
+vendor/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================================================================
+# Local Build Output & Compilation Artifacts
+# =========================================================================
+dist/
+build/
+target/
+out/
+.next/
+.nuxt/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# =========================================================================
+# Secrets & Sensitive Environment Configs
+# =========================================================================
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.cert
+secrets/
+credentials.json
+.npmrc
+.yarnrc
+
+# =========================================================================
+# IDEs, Text Editors, & OS Artifacts
+# =========================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# =========================================================================
+# Logs, Tests, & Documentation
+# =========================================================================
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+*.md
+docs/
+test/
+tests/
+testdata/
+
+# =========================================================================
+# Docker Files (Prevents recursive context passing)
+# =========================================================================
+Dockerfile*
+docker-compose*.yml
+.dockerignore
